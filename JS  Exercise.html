@@ -1,0 +1,141 @@
+<html>
+<boday>
+
+<h1>JS Exercise</h1>
+<hr>
+
+//QUESTION-01:
+<h2>01.  Write the function to calculate  a number’s square?</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+document.getElementById("demo").innerHTML = Math.pow(x,2);
+</script>
+<br>
+<hr>
+
+//QUESTION-02
+<h2>02.  Declare 2 variables as num1 and num2, and</h2>
+<h3>a. Write a function to add these two numbers and  name the function as addNum.</h3>
+<h3>b. Write a function to multiply these two numbers and  name the function as multiNum.</h3>
+<h3>c. Write a function to subtract these two numbers and  name the function as subtractNum.</h3>
+<h3>d. Write a function to divide these two numbers and  name the function as divideNum.</h3>
+<h3>e. The outputs must be like this</h3>
+
+
+
+<p>#  The addition of the two numbers is output(4,3)</p>
+
+<p id="demo01"></p>
+<script>
+
+function addNum(num1, num2) {
+   return num1+num2;
+ }
+ document.getElementById("demo01").innerHTML = "output"+" " + addNum(4, 3);
+
+</script>
+
+<p># The multiplication of the two numbers is output(4,3)</p>
+
+<p id="demo02"></p>
+<script>
+
+function multiNum(num1, num2) {
+   return num1*num2;
+  }
+   document.getElementById("demo02").innerHTML = "output"+" " + multiNum(4, 3);
+
+  </script>
+
+  <p># The subtraction of the two numbers is output(4,3)</p>
+
+  <p id="demo03"></p>
+   <script>
+
+  function subtractNum(num1, num2) {
+   return num1-num2;
+   }
+      document.getElementById("demo03").innerHTML = "output"+" " + subtractNum(4, 3);
+
+      </script>
+
+    <p># The division of the two numbers is output(4,2)</p>
+
+    <p id="demo04"></p>
+    <script>
+
+function divideNum(num1, num2) {
+    return num1/num2;
+      }
+    document.getElementById("demo04").innerHTML = "output"+" " + subtractNum(4, 2);
+
+  </script>
+
+
+<br>
+<hr>
+
+//QUESTION-03
+<h2> 3.   Write a function to print “Hello World” in an alert ?</h2>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  alert("Hello World");
+}
+</script>
+
+<br>
+<hr>
+
+//QUESTION-04
+<h2>  4.   Write a function to calculate the volume of a cuboid   (Volume=length*width,*height)?</h2>
+
+<p id="demo05"></p>
+<script>
+var length,width,height;
+function multicalculate(length,width,height) {
+   return (length*width*height);
+ }
+ document.getElementById("demo05").innerHTML = "Volume="+ " " + multicalculate(4,2,2);
+
+ </script>
+
+ <br>
+ <hr>
+
+ //QUESTION-O5
+ <h2> 5.   Create a object (firstName - Nimal , lastName - Raj, age - 15, city - Kandy) and assign it to a variable named person. Write the JS code to have the following output?</h1>
+
+ <p id="demo06"></p>
+
+ <script>
+ var person ={firstName : "Nimal" , lastName : "Raj" , age : 15, city :"Kandy"};
+
+  document.getElementById("demo06").innerHTML="My name is" +"I live an" + " " + person.lastName + "." + "I'm" +" " +person.age + " " + "years old." + " I live an" + " " + person.city + ".";
+
+ </script>
+
+<br>
+<hr>
+
+//QUESTION-O6
+<h2>   6.   Create a object ( courseName- BIT, courseFee- Rs 150 000, startDate- 12.06.2018, center- Our Office) and assign it to a variable named course. Write the JS code to have the following output</h2>
+
+<p id="demo07"></p>
+
+ <script>
+ var course = {courseName : "BIT", courseFee : "Rs 150 000", startDate :"12.06.2018", center : "Our Office"};
+ document.getElementById("demo07").innerHTML = "Course Name:" + " " + course.courseName + "<br>" + "Course Fee:" + " " + course.courseFee
+ + "<br>" + "Start Date:" + " " + course.startDate + "<br>" + "Center:" + " " + course.center;
+ </script>
+
+
+
+
+</body>
+</html>
